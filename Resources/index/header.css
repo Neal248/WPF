@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+  overflow: hidden;
+}
+
+.NavBarUl {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 10px;
+  z-index: 0;
+}
+
+
+.NavBarLiA:hover:not(.active) {
+    background-color: #4CAF50; /* change according to canvas color */
+}
+
+.NavBarActive {
+    background-color: #FFFFFF;
+}
+
+.NavBarLiA {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.NavBarLi {
+  float: left;
+}

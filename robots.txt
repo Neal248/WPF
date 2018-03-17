@@ -1,0 +1,7 @@
+#Jailbreak
+
+#Hat funktioniert
+
+User-agent: *
+Disallow: /
+

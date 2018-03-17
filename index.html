@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neal's Home</title>
+  <link  rel="stylesheet" href="/Resources/Sidebar/sidebar.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/Resources/Icon/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/Resources/Icon/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/Resources/Icon/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/Resources/Icon/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/Resources/Icon/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/Resources/Icon/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/Resources/Icon/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/Resources/Icon/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/Resources/Icon/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192"  href="/Resources/Icon/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/Resources/Icon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/Resources/Icon/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/Resources/Icon/favicon-16x16.png"><link rel="manifest" href="/Resources/Icon/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/Resources/Icon/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff">
+  <script>(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()</script>
+  </head>
+  <body>
+
+<div class="nav-right visible-xs">
+  <div class="button" id="btn">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom"></div>
+  </div>
+</div>
+<!-- nav-right -->
+<main>
+
+  <nav>
+    <div class="nav-right hidden-xs">
+      <div class="button" id="btn">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+    </div>
+    <!-- nav-right -->
+  </nav>
+<!--<div>
+  <div id="lineDrawing">
+    <svg viewBox="0 0 280 100">
+      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+        <path d
+    </svg>
+
+</div>-
+<script src="line.js"></script>
+-->
+<ul class="NavBarUl">
+  <li class="NavBarLi"><a class="NavBarActive, NavBarLiA color" href="http://pon.webwalden.ch/">Home</a></li>
+  <li class="NavBarLi"><a class="NavBarLiA color" href="#news">News</a></li>
+  <li class="NavBarLi"><a class="NavBarLiA color" href="http://pon.webwalden.ch/Index/To_do.html">To do</a></li>
+  <li class="NavBarLi"><a class="NavBarLiA color" href="#contact">Contact</a></li>
+  <li class="NavBarLi"><a class="NavBarLiA color" href="http://pon.webwalden.ch/Index/About.html">About</a></li>
+</ul>
+<canvas id="canvas"></canvas>
+<script src="/Resources/index/index-depend.js"></script>
+<script src="/Resources/index/index-depend-1.js"></script>
+<script src="/Resources/index/index.js"></script>
+
+<div style="color: white" class="display-middle fade">
+    <h1 class="center jumbo animate-top color">COMING "SOON"</h1>
+    <hr class="border-grey" style="margin:auto;width:40%">
+    <p id="Date" class="large center color"></p>
+</div>
+<script>
+  today = new Date();
+
+BigDay = new Date("July 6, 2018");
+msPerDay = 24 * 60 * 60 * 1000 ;
+timeLeft = (BigDay.getTime() - today.getTime());
+e_daysLeft = timeLeft / msPerDay;
+daysLeft = Math.floor(e_daysLeft);
+e_hrsLeft = (e_daysLeft - daysLeft)*24;
+hrsLeft = Math.floor(e_hrsLeft);
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+document.getElementById("Date").innerHTML = "Noch " + daysLeft + " Tage " + hrsLeft +" Stunden und " + minsLeft + " minuten"
+</script>
+
+</main>
+<div class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item"><a href="/Meme/mandelbrot.html" class="sidebar-anchor">Komplexe Zahlen</a></li>
+    <li class="sidebar-item"><a href="/Challenge/Challenge.html" class="sidebar-anchor">Challenge</a></li>
+    <li class="sidebar-item"><a href="/Gravity/Gravity.html" class="sidebar-anchor">Gravity</a></li>
+    <li class="sidebar-item"><a href="/Dia/Dia-Test.html" class="sidebar-anchor">Diagramm</a></li>
+    <li class="sidebar-item"><a class="sidebar-anchor parent-sidebar">3D-Zeug</a></li>
+    <li class="sidebar-item"><a href="/3D/Start1.html" class="sidebar-anchor sidebar-hidden">3D-Start</a></li>
+    <li class="sidebar-item"><a href="/3D/WebGL-Fluid-Simulation/index.html" class="sidebar-anchor sidebar-hidden">3D-2</a></li>
+    <li class="sidebar-item"><a href="/3D/3D-3.html" class="sidebar-anchor sidebar-hidden">3D-3</a></li>
+    <li class="sidebar-item"><a href="/3D/3D-4.html" class="sidebar-anchor sidebar-hidden">3D-4</a></li>
+    <li class="sidebar-item"><a href="/Test/Overhead.html" class="sidebar-anchor">JavaScript Testing</a></li>
+    <li class="sidebar-item"><a href="/Pixel/Pixel.html" class="sidebar-anchor">Pixel</a></li>
+	<li class="sidebar-item"><a href="/Computer/pc_2.0.html" class="sidebar-anchor">Pc</a></li>
+	<li class="sidebar-item"><a href="/Dithering/index.html" class="sidebar-anchor">Dithering</a></li>
+	<li class="sidebar-item"><a href="/NeuralNetwork/examples/mnist/index.html" class="sidebar-anchor">NeuralNetwork</a></li>
+  </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="Resources/Sidebar/sidebar.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.20.0/polyfill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/292951/three.bas.js"></script>
+<script src="Resources/geometry/geometry.js"></script>-->
+</body>
+</html>
